@@ -1,0 +1,384 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xcFB6e59A02D49d635FaB4505Db748D0e4364ac32",
+    "txHash": "0x958ee128e1363e068572442b4fa3baad364a86811c2f6d568e461386e49e5434"
+  },
+  "proxies": [
+    {
+      "address": "0x25D58C60b39DDbEEdEB4B84e6e580B9b41F7A89b",
+      "txHash": "0xd88cb5221f9cb13375c090343b72876afdd0c7a459c67b2e8f33b704256e910f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3f093f145da2A065b76a27FDf1fB29672Eb5dEDF",
+      "txHash": "0x48cc950fb58c0e7e64d41ea3dcc6c7b6d92ab74ac214e6539c899268eece987e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x10e4FD1Ad66A53C899F62F51905E5DD4F3F646B6",
+      "txHash": "0x8cc39caf1ab6d2562aee5c41078115969aea51bd2c1cb20a6b574cc0230e58ec",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x02d8144D252F4Be380e6eE94B680256152A7bc89",
+      "txHash": "0x18c0e4f2ace526dec1fbacd0a826d4251fa35039eed76c96f4c8fd7293598017",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x00Ac1Fab78757413705Ac422B027b9ABbe9ff19f",
+      "txHash": "0x34dbac2552eea89685ccb473da2d5c64a67de0ce1051951b71e317292bfa912f",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "2d385502b090f542d6fd0f281af4457dfa9662d074fd26ad1f3b630f57e1f4d9": {
+      "address": "0xaf51cfdD8a9FCC909d154367E15357385579Bb38",
+      "txHash": "0xe3eab3d67960da7b9e38d343212d9a09b59b7992b06eed56152796cb6b340182",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(IERC20Upgradeable)275",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:17"
+          },
+          {
+            "label": "isInitialTimestamp",
+            "offset": 20,
+            "slot": "101",
+            "type": "t_bool",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:18"
+          },
+          {
+            "label": "investorsBalances",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(Investor)4208_storage)",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:19"
+          },
+          {
+            "label": "allocations",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_enum(AllocationTypes)4201,t_uint256)",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:20"
+          },
+          {
+            "label": "vestingStarted",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:22"
+          },
+          {
+            "label": "vestingFinished",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_uint256",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:23"
+          },
+          {
+            "label": "endCliffPeriod",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_uint256",
+            "contract": "VestingUpgradeable",
+            "src": "contracts\\VestingUpgradeable.sol:24"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20Upgradeable)275": {
+            "label": "contract IERC20Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_enum(AllocationTypes)4201": {
+            "label": "enum IVesting.AllocationTypes",
+            "members": [
+              "Seed",
+              "Private"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(Investor)4208_storage)": {
+            "label": "mapping(address => struct IVesting.Investor)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_enum(AllocationTypes)4201,t_uint256)": {
+            "label": "mapping(enum IVesting.AllocationTypes => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Investor)4208_storage": {
+            "label": "struct IVesting.Investor",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "claimedAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "allocationPercantage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "915c64a3de9773f9c7ad2eef03e563d4b82d28fa67d5d56327647ac42b757e68": {
+      "address": "0xcAe2b4e63Fbc5795505Ec2547734d8b9e45374F7",
+      "txHash": "0x129c5e5b1520dc81a07c438b6105627f714fbf017e918822f5f70f49c26bfb1d",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "token",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_contract(IERC20Upgradeable)275",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:17"
+          },
+          {
+            "label": "isInitialTimestamp",
+            "offset": 20,
+            "slot": "101",
+            "type": "t_bool",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:18"
+          },
+          {
+            "label": "investorsBalances",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(Investor)4208_storage)",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:19"
+          },
+          {
+            "label": "allocations",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_enum(AllocationTypes)4201,t_uint256)",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:20"
+          },
+          {
+            "label": "vestingStarted",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:22"
+          },
+          {
+            "label": "vestingFinished",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_uint256",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:23"
+          },
+          {
+            "label": "endCliffPeriod",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_uint256",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:24"
+          },
+          {
+            "label": "isCall",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_bool",
+            "contract": "VestingUpgradeable_V2",
+            "src": "contracts\\VestingUpgradeable_V2.sol:25"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20Upgradeable)275": {
+            "label": "contract IERC20Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_enum(AllocationTypes)4201": {
+            "label": "enum IVesting.AllocationTypes",
+            "members": [
+              "Seed",
+              "Private"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(Investor)4208_storage)": {
+            "label": "mapping(address => struct IVesting.Investor)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_enum(AllocationTypes)4201,t_uint256)": {
+            "label": "mapping(enum IVesting.AllocationTypes => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Investor)4208_storage": {
+            "label": "struct IVesting.Investor",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "claimedAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "allocationPercantage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
